@@ -32,6 +32,8 @@ const sendData = (id) => {
 <style scoped>
 .product_link {
   display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 </style>

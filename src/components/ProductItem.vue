@@ -13,17 +13,16 @@ const props = defineProps({
 
 <style scoped>
 .product_title {
-    text-align: center;
-  margin: 20px;
-  background-color: rgb(145, 167, 83);
-  padding: 40px;
-  color: #fff;
-  border-radius:  0 20px;
-  font-size: 36px;
-  font-weight: bold;
-    width: 100%;
-      box-shadow: 0px 0px 22px 3px rgba(57, 57, 61, 0.25);
-
-
+  text-align: center;
+  margin: 7px;
+  padding: 20px;
+  color: #000;
+  border-radius: 0 20px;
+  font-size: 26px;
+  /* font-weight: bold; */
+  width: 100%;
+  box-shadow: 1px 3px 27px 7px rgba(34, 60, 60, 0.25);
+  width: 100%;
+  border: 1px solid rgba(34, 60, 60, .3);
 }
 </style>

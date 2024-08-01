@@ -6,13 +6,13 @@
       <div class="item">
         <div v-for="item in product.items" :key="item.id">
           <div class="item_card">
-            
             <img :src="item.img" alt="" />
 
             <div>
               <p class="kaz_title">{{ item.kaztitle }}</p>
-              <b class="price">{{ item.price }}.00 <span>₸</span></b>
               <p class="rus_title">{{ item.rustitle }}</p>
+              <b class="price">{{ item.price }}.00 <span>₸</span></b>
+              <p class="card_data">{{ item.keyword }}</p>
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import Daonload from '../components/Daonload.vue'
+import Daonload from "../components/Daonload.vue";
 import { onMounted, ref, computed } from "vue";
 import axios from "axios";
 import { useRoute } from "vue-router";
@@ -81,19 +81,19 @@ const product = computed(() => {
   border-radius: 8px;
 }
 .product_title_text {
-  color: rgb(145, 167, 83);
-  font-size: 42px;
+  color: rgb(185, 89, 89);
+  font-size: 28px;
   margin-left: 40px;
   margin-top: 10px;
 }
 
 .kaz_title {
-  font-size: 28px;
+  font-size: 24px;
   /* font-weight: bold; */
   color: rgb(3, 45, 3);
 }
 .rus_title {
-  font-size: 24px;
+  font-size: 20px;
   /* font-weight: bold; */
   color: rgb(69, 69, 69);
 }
@@ -104,5 +104,10 @@ const product = computed(() => {
 
 .price span {
   font-size: 16px;
+}
+
+.card_data {
+  color: rgb(185, 89, 89);
+  font-weight: bold;
 }
 </style>
