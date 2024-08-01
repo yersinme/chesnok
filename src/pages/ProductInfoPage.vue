@@ -64,10 +64,11 @@ const product = computed(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   width: 100%;
-  height: 100%;
+  height: 900%;
   background-color: #fff;
-  padding: 20px 20px;
+  padding: 10px 10px;
   border-radius: 0 0 20px 20px;
   border-bottom: 1px solid grey;
   box-shadow: 1px 3px 27px 7px rgba(34, 60, 60, 0.25);
@@ -77,7 +78,7 @@ const product = computed(() => {
 }
 .item_card img {
   width: 150px;
-  height: 100%;
+  height: 90%;
   border-radius: 8px;
 }
 .product_title_text {
@@ -88,12 +89,12 @@ const product = computed(() => {
 }
 
 .kaz_title {
-  font-size: 24px;
+  font-size: 18px;
   /* font-weight: bold; */
   color: rgb(3, 45, 3);
 }
 .rus_title {
-  font-size: 20px;
+  font-size: 16px;
   /* font-weight: bold; */
   color: rgb(69, 69, 69);
 }
@@ -109,5 +110,6 @@ const product = computed(() => {
 .card_data {
   color: rgb(185, 89, 89);
   font-weight: bold;
+  font-size: 14px;
 }
 </style>
